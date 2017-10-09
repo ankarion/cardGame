@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script src="init.js"></script>
+<script src="gameplay.js"></script>
+<link rel="stylesheet" type="text/css" href="card.css">
+</head>
+
+<body>
+
+<div id="quests">
+</div>
+
+<div id="world" effects={{effects}} ng-app="cards" ng-controller="tableCtrl" actions={{actions}}>
+	<center id="table" display:none>
+		<section id={{fraction}} class="table" ng-repeat="(fraction,units) in creatures">
+			<div class="fractionName">
+				{{fraction}}
+			</div>
+			<!-- Beginning of the definition of all creatures of the fraction.
+				It has:
+					Name
+					HP progress bar
+					positive effects | Avatar(image) | negative effects
+			-->
+			<span id={{fraction}}{{unit.name}} class="card" ng-repeat="unit in units" spellbook={{spellbook["units"]}} draggable=false ondrop="drop(event)" ondragover="allowDrop(event)">
+				<div class=cardName>
+					<!-- Name -->
+					{{unit.name}}
+				</div>
+				<!-- HP indicator progress bar -->
+				<div id=HP class="progress" draggable="false">
+					<progress class="progress-value" id=progress max={{unit.maxHP}} value={{unit.HP}}></progress>
+				</div>
+				<!-- Avatar -->
+				
+				<div id="avatar" class="avatar" style="background-image: url('{{unit.avatar}}')">
+				</div>
+				
+			</span>
+		</section>
+		
+		<section class="table">
+			<div class="fractionName">hand</div>
+			<div id=hand spellbook={{spellbook['player']}} cardTopId={{handTopId}}>
+			</div>
+		</section>
+	</center>
+</div>
+
+
+</body>
+</html>
