@@ -1,0 +1,40 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,900);
+:root {
+	--border-radius-size: 14px;
+	--barbarian: #EC9B3B;
+	--archer: #EE5487;
+	--giant: #F6901A;
+	--goblin: #82BB30;
+	--wizard: #4FACFF;
+	--unknown: #696969;
+}
+
+.unknown{
+	color: var(--unknown);
+	--class: var(--unknown);
+}
+
+.barbarian{
+	color: var(--barbarian);
+	--class: var(--barbarian);
+}
+
+.archer{
+	color: var(--archer);
+	--class: var(--archer);
+}
+
+.giant{
+	color: var(--giant);
+	--class: var(--giant);
+}
+
+.goblin{
+	color: var(--goblin);
+	--class: var(--goblin);
+}
+
+.wizard{
+	color: var(--wizard);
+	--class: var(--wizard);
+}

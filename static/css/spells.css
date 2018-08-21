@@ -1,0 +1,57 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,900);
+:root {
+	--border-radius-size: 14px;
+
+	--spell: #1f1f1f;
+	--heal: #008000;
+	--arcane: #7e6792;
+	--physics: #660000;
+
+	--spell_dimmed: #1f1f1f;
+	--heal_dimmed: #003300;
+	--arcane_dimmed: #3a293a;
+	--physics_dimmed: #280000;
+}
+
+.spell{
+	color: var(--spell);
+	--class: var(--spell);
+}
+
+.heal{
+	color: var(--heal);
+	--class: var(--heal);
+}
+
+.heal:focus {
+	color: var(--heal_dimmed);
+	--class: var(--heal_dimmed);
+}
+
+.arcane{
+	color: var(--arcane);
+	--class: var(--arcane);
+}
+
+.arcane:focus {
+	color: var(--arcane_dimmed);
+	--class: var(--arcane_dimmed);
+}
+
+.physics{
+	color: var(--physics);
+	--class: var(--physics);
+}
+
+.physics:focus {
+	color: var(--physics_dimmed);
+	--class: var(--physics_dimmed);
+}
+
+.arcane:focus .image,
+.heal:focus   .image{
+	background: url("../images/book.gif") no-repeat, linear-gradient(to bottom right, #1b1126, var(--class)) 100% 100% no-repeat;
+	background-size: 300px;
+	border-top-left-radius: var(--border-radius-size);
+	border-top-right-radius: var(--border-radius-size);
+};

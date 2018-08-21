@@ -1,6 +1,0 @@
-Here are the rules:
-<ul>
-<li>On the desk you can see some units, which can NOT be controlled directly by you.
-<li>Their aim is to stay alive.
-<li>Your goal is to defeat your enemy.
-<\ul>

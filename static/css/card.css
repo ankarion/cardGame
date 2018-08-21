@@ -1,0 +1,76 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,900);
+
+.card {
+	background: white;
+	width: 300px;
+	display: inline-block;
+	margin: auto;
+	border-radius: var(--border-radius-size);
+	position: relative;
+	text-align: center;
+	box-shadow: -1px 15px 30px -12px black;
+	z-index: 9999;
+}
+
+.card .image{
+	background: linear-gradient(to bottom right, #1b1126, var(--class)) 100% 100% no-repeat;
+	background-size: cover;
+	position: relative;
+	height: 230px;
+	margin-bottom: 35px;
+	border-top-left-radius: var(--border-radius-size);
+	border-top-right-radius: var(--border-radius-size);
+}
+
+.card .image img{
+	position: absolute;    
+	top: -30px;
+	left: 35px;
+	max-height: 300px;
+	overflow: hidden;
+}
+
+.card .name {
+	font-size: 26px;
+	font-weight: 900;
+	margin-bottom: 5px;
+}
+
+.card .lvl {
+	color: var(--class);
+}
+
+.card .description {
+	padding: 20px;
+	margin-bottom: 10px;  
+}
+
+.card .stats{
+	color: white;
+	height: auto;
+	font-weight: 700;
+	border-bottom-left-radius: var(--border-radius-size);
+	border-bottom-right-radius: var(--border-radius-size);
+}
+
+.card .stats .MP, 
+.card .stats .HP, 
+.card .stats .statR{
+	width: 33.3%;
+	float: left;
+	padding: 20px 15px;
+	background: var(--class);
+}
+
+.card .stats .MP{
+	border-right: 2px solid rgba(0,0,0,.1);
+}
+
+.card .stats .HP{
+	border-bottom-left-radius: var(--border-radius-size);
+	border-right: 2px solid rgba(0,0,0,.1);
+}
+
+.card .stats .statR{
+	border-bottom-right-radius: var(--border-radius-size);
+}

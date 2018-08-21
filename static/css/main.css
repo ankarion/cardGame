@@ -1,0 +1,23 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,900);
+*, *:before, *:after {
+  box-sizing: border-box;
+  user-select: none;
+  outline:none;
+}
+
+body {
+	background: linear-gradient(to bottom, #261b11, #111c26) fixed;
+	background-size: cover;
+	font: 14px/20px "Lato", Arial, sans-serif;
+	color: #9E9E9E;
+	margin-top: 30px;
+}
+
+.game {
+	margin: auto;
+	border-radius: var(--border-radius-size);
+	position: relative;
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 15px;
+}
